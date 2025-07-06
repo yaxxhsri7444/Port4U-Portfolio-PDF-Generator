@@ -36,20 +36,19 @@ portfolioforge/
 
 ## ⚙️ Tech Stack
 
-| Technology     | Description                     |
-|----------------|---------------------------------|
-| Angular 19     | Frontend framework              |
-| Node.js        | Backend runtime environment     |
-| Express.js     | Node.js framework               |
-| MongoDB        | NoSQL database                  |
-| PDFKit / Puppeteer | PDF generation              |
-| Bootstrap      | UI styling                      |
-| Git & GitHub   | Version control & hosting       |
+- | Technology     | Description                     |
+- |----------------|---------------------------------|
+- | Angular 19     | Frontend framework              |
+- | Node.js        | Backend runtime environment     |
+- | Express.js     | Node.js framework               |
+- | MongoDB        | NoSQL database                  |
+- | PDFKit / Puppeteer | PDF generation              |
+- | Bootstrap      | UI styling                      |
+- | Git & GitHub   | Version control & hosting       |
 
 ---
-)
 
-##🙋‍♂️ Author
+## 🙋‍♂️ Author
 - Saksham Srivastava
 - 🎓 BCA 3rd Year
 - 📍 Dr. R.M.L.U, Ayodhya
