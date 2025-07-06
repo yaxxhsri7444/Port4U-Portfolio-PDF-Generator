@@ -1,0 +1,45 @@
+/* Smooth background animation */
+body {
+  background: linear-gradient(-45deg, #f0f8ff, #e6ffe6, #fff0f5, #f9f9f9);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Form container animation */
+.container {
+  border-radius: 15px;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeSlideIn 1s ease forwards;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+/* Project section styling */
+textarea,
+input[type="text"],
+input[type="email"] {
+  transition: box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0.2rem rgba(72, 176, 255, 0.3);
+}
+
+/* Animations */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

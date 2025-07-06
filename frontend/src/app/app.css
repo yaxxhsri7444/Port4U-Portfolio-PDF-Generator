@@ -1,0 +1,8 @@
+h1 {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme h1 {
+  color: #90caf9;
+  text-shadow: 0 0 8px rgba(144, 202, 249, 0.7);
+}

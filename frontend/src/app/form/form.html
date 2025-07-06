@@ -1,0 +1,25 @@
+<form (ngSubmit)="generatePDF()" #portfolioForm="ngForm" class="container mt-4 animate__animated animate__fadeIn">
+  <div class="mb-3">
+    <input type="text" class="form-control" name="name" [(ngModel)]="formData.name" placeholder="Name" required>
+  </div>
+  <div class="mb-3">
+    <textarea class="form-control" name="bio" [(ngModel)]="formData.bio" placeholder="Bio"></textarea>
+  </div>
+  <div class="mb-3">
+    <input type="text" class="form-control" name="skills" [(ngModel)]="skillsInput" placeholder="Comma-separated skills">
+  </div>
+  <hr>
+  <div *ngFor="let p of formData.projects; let i = index" class="mb-3 animate__animated animate__fadeInUp">
+    <input type="text" class="form-control mb-1" [(ngModel)]="formData.projects[i].title" name="title{{i}}" placeholder="Project Title">
+    <input type="text" class="form-control mb-1" [(ngModel)]="formData.projects[i].link" name="link{{i}}" placeholder="Project Link">
+    <textarea class="form-control" [(ngModel)]="formData.projects[i].description" name="desc{{i}}" placeholder="Project Description"></textarea>
+  </div>
+  <button type="button" class="btn btn-secondary mb-3" (click)="addProject()">Add Project</button>
+  <hr>
+  <div class="mb-3">
+    <input type="email" class="form-control mb-2" name="email" [(ngModel)]="formData.contact.email" placeholder="Email">
+    <input type="text" class="form-control mb-2" name="github" [(ngModel)]="formData.contact.github" placeholder="GitHub">
+    <input type="text" class="form-control mb-2" name="linkedin" [(ngModel)]="formData.contact.linkedin" placeholder="LinkedIn">
+  </div>
+  <button type="submit" class="btn btn-primary animate__animated animate__pulse animate__infinite">Generate PDF</button>
+</form>
